@@ -1,12 +1,12 @@
 name: GLaDOS 2026 Checkin
 
 on:
-  schedule:
+  # schedule:
     # 北京时间 09:30（UTC 01:30）。Turnstile 时期：定时与外部触发的运行自动降级为
     # 只读状态推送（CHECKIN_NOTIFY_STATUS_ONLY=true），不再尝试签到，避免必然的
     # 失败推送；机房 IP 无法通过 Turnstile。如官方撤下验证，把仓库变量
     # ALLOW_SCHEDULED_CHECKIN 设为 true 即恢复完整签到。
-    - cron: '30 1 * * *'
+    # cron: '30 1 * * *'
   workflow_dispatch:
     inputs:
       dispatch_source:
