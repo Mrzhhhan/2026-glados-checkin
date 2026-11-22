@@ -1,9 +1,9 @@
 name: Daily Streak Report
 
 on:
-  schedule:
+  # schedule:
     # 北京时间 10:05（在 09:30 本地签到与 09:31 云端只读核对之后）
-    - cron: '5 2 * * *'
+    # - cron: '5 2 * * *'
   workflow_dispatch:
 
 permissions:
